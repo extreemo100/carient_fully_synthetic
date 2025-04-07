@@ -75,7 +75,7 @@
         moreInfoImage.src = "Button Design-03.png"; // Replace with the path to your green button PNG image
         moreInfoImage.id = "more-info-img";
         moreInfoImage.addEventListener("click", () => {
-          window.open('https://pso-pocketguide.vercel.app/?animation=5&link=link1', '_blank'); // Open index.html with the 6th animation
+          window.open('https://3d-book-viewer.vercel.app/?animation=5&link=link1', '_blank'); // Open index.html with the 6th animation
         });
         document.body.appendChild(moreInfoImage);
 
@@ -115,7 +115,7 @@
           const light = new THREE.HemisphereLight( 0xffffff, 0xbbbbff, 1 );
           scene.add(light);
 
-          const gltf = await loadGLTF('carient_fs_animated.glb');
+          const gltf = await loadGLTF('fully_synthetic.glb');
           gltf.scene.scale.set(0.1,0.1,0.1);
           gltf.scene.position.set(0, -0.4, 0);
 
